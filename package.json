@@ -1,12 +1,34 @@
 {
   "name": "bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "discord bot maded by a retard",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Sundeep de Jongh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sundeep-deJongh/bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sundeep-deJongh/bot/issues"
+  },
+  "homepage": "https://github.com/Sundeep-deJongh/bot#readme",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "chalk": "^5.0.1",
+    "discord-api-types": "^0.37.1",
+    "discord.js": "^14.1.3-dev.1660003924-aac8acc.0",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.5.1",
+    "ms": "^2.1.3",
+    "os": "^0.1.2",
+    "quick.db": "^9.0.6"
+  }
 }
