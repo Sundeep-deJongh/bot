@@ -1,0 +1,5 @@
+messages:
+  COOLDOWN_MESSAGE: "You can't use this command for <duration> seconds."
+
+developer: "**Sundeep#2005**"
+owner: "**Sundeep#2005**"

@@ -1,0 +1,8 @@
+{
+  "developer": "**Sundeep#2005**",
+  "eigenaar": "**Sundeep#2005**",
+
+  "messages": {
+    "COOLDOWN_MESSAGE": "Je hebt een cooldown van ``<duration>``!"
+  }
+}
