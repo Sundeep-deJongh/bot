@@ -33,7 +33,7 @@ module.exports = {
                     new ButtonBuilder()
                         .setCustomId('ticket-create')
                         .setLabel('Maak Ticket')
-                        .setStyle(ButtonStyle.Danger)
+                        .setStyle(ButtonStyle.Primary)
                         .setEmoji('🎫'),
                 )
 

@@ -10,7 +10,7 @@ client.on('interactionCreate', async interaction => {
         const guild = interaction.guild;
         const user = interaction.user;
 
-        if(client.guilds.cache.get(interaction.guildId).channels.cache.find(c => c.topic === interaction.user.id)) {
+        if(client.guilds.cache.get(interaction.guildId).channels.cache.find(c => c.name === `ticket-${user.tag}`)) {
 
             let AlreadyTicket = new EmbedBuilder()
                 .setTitle('Ticket')
@@ -22,7 +22,8 @@ client.on('interactionCreate', async interaction => {
             return interaction.reply({ embeds: [AlreadyTicket], ephemeral: true });
         }
 
-        guild.channels.create({ name: `ticket-${user.username}`, reason: `${user} heeft een ticket gemaakt!` }).then(async (channel) => {
+        guild.channels.create({ name: `ticket-${user.tag}`, reason: `${user} heeft een ticket gemaakt!` }).then(async (channel) => {
+
 
             let everyoneRole = guild.roles.cache.find(r => r.name === '@everyone');
             let ticketRole = guild.roles.cache.find(r => r.id === '1006524966914760816');
@@ -65,7 +66,7 @@ client.on('interactionCreate', async interaction => {
                       new ButtonBuilder()
                         .setCustomId('ticket-close')
                         .setLabel('Sluiten')
-                        .setStyle(ButtonStyle.Secondary)
+                        .setStyle(ButtonStyle.Danger)
                         .setEmoji('🔒'),
                 );
 
