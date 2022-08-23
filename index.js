@@ -1,4 +1,5 @@
 const { Client, GatewayIntentBits, Partials, Collection, EmbedBuilder } = require('discord.js');
+const { Player } = require('discord-player')
 const chalk = require('chalk');
 const fs = require('fs');
 require('dotenv').config();
@@ -11,7 +12,6 @@ const client = new Client({
         GatewayIntentBits.GuildIntegrations,
         GatewayIntentBits.GuildWebhooks,
         GatewayIntentBits.GuildInvites,
-        GatewayIntentBits.GuildVoiceStates,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.GuildMessageReactions,
         GatewayIntentBits.GuildMessageTyping,
@@ -19,8 +19,8 @@ const client = new Client({
         GatewayIntentBits.DirectMessageReactions,
         GatewayIntentBits.DirectMessageTyping,
         GatewayIntentBits.GuildPresences,
-        GatewayIntentBits.GuildVoiceStates,
         GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildVoiceStates
     ], partials: [
         Partials.Channel,
         Partials.Message,
